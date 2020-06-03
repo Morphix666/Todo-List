@@ -9,7 +9,6 @@ todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("click", filterTodo);
 //Functions
 function addTodo(event) {
-  //Prevent form from submiting
   event.preventDefault();
   //Create TODO DIV
   const todoDiv = document.createElement("div");
@@ -84,7 +83,7 @@ function filterTodo(event) {
 }
 
 function saveLocalTodos(todo) {
-  //CHECK -- HEY Do i already have thing in there?
+  //CHECK
   let todos;
   if (localStorage.getItem("todos") === null) {
     todos = [];
